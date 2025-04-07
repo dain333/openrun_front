@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="loginstyle.css"
+    />
+    <title>로그인</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <h1>첫번째 프로젝트다</h1>
-    <p>예~~</p>
-    <h2>
-        하하하하
-    </h2>
-    <h3> 추가했다 이 부분 </h3>
-
-</body>
-
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form method="post" action="login_proc.php" id="login-form">
+        <div class="login_input">
+          <input type="text" name="id" placeholder="ID" />
+          <input type="password" name="passwd" placeholder="PASSWORD" />
+        </div>
+        <div class="submit_button">
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
