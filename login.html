@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/loginstyle.css" />
+    <link rel="stylesheet" />
     <style>
+      input.img-button {
+        background: url("https://i.ibb.co/3493r17/cat.jpg") no-repeat;
+        width: 100px;
+        height: 100px;
+      }
       /* Styling the container */
       .container {
         position: absolute;
@@ -61,7 +66,7 @@
       /* Hover effect for the submit button */
       .submit_button input[type="submit"]:hover {
         background-color: #ffd049;
-        border:1px solid white;
+        border: 1px solid white;
       }
     </style>
     <title>로그인</title>
@@ -69,7 +74,7 @@
 
   <body>
     <div class="container">
-      <h2>로그인</h2>
+      <input type="button" class="img-button" onclick="alert('클릭!')">
       <form method="post" action="login_proc.php" id="login-form">
         <div class="login_input">
           <input type="text" name="id" placeholder="ID" />
