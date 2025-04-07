@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" />
     <style>
-      input.img-button {
-        background: url("https://i.ibb.co/3493r17/cat.jpg") no-repeat;
-        width: 100px;
-        height: 100px;
-      }
+      img{
+            width: 210px;
+            height: 100px;
+            object-fit: contain;
+        }
+      
+      button {border:none; background-color: #f5f5f5;}
       /* Styling the container */
       .container {
         position: absolute;
@@ -74,8 +76,9 @@
 
   <body>
     <div class="container">
-      <input type="button" class="img-button" onclick="alert('클릭!')">
-      <form method="post" action="login_proc.php" id="login-form">
+      <button type="button" onclick="alert('클릭!')">
+        <img src="./logo.png"/>
+      </button>
         <div class="login_input">
           <input type="text" name="id" placeholder="ID" />
           <input type="password" name="passwd" placeholder="PASSWORD" />
