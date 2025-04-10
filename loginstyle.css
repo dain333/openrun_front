@@ -16,7 +16,7 @@ img{
 
 .logo-button img {
   display: block;
-  width: px; /* 원하는 로고 크기 */
+  width: 200px; /* 원하는 로고 크기 */
 }
 
 /* Styling the container */
