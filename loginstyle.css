@@ -1,56 +1,99 @@
+img{
+  width: 210px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.logo-button {
+  display: inline-block;
+  border: none;
+  background-color: white;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.logo-button img {
+  display: block;
+  width: px; /* 원하는 로고 크기 */
+}
+
 /* Styling the container */
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 400px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    font-family: "Roboto", sans-serif; /* Apply Roboto font */
-  }
-  
-  /* Styling the login form */
-  #login-form {
-    display: inline-block;
-    text-align: left;
-  }
-  
-  /* Styling the heading */
-  h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
-  
-  /* Styling the input fields and submit button */
-  .login_input input {
-    border: 2px solid lightgrey;
-    border-radius: 40px;
-    outline: none;
-    width: 98%;
-    height: 30px;
-    text-indent: 7px;
-    margin-bottom: 8px;
-  }
-  
-  /* Styling the submit button */
-  .submit_button input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color: black;
-    color: #fff;
-    border: 1px solid #dbdbdb;
-    border-radius: 40px;
-    outline: none;
-    font-size: 14px;
-    box-sizing: border-box; /* 추가: 박스 모델에 패딩과 테두리 포함 */
-  }
-  
-  /* Hover effect for the submit button */
-  .submit_button input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+max-width: 400px;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+font-family: "Roboto", sans-serif; /* Apply Roboto font */
+}
+
+/* Styling the login form */
+#login-form {
+display: inline-block;
+text-align: left;
+}
+
+/* Styling the heading */
+h2 {
+font-size: 35px;
+margin-bottom: 20px;
+margin-top: 10px;
+}
+
+/* Styling the input fields and submit button */
+.login_input input {
+border: 2px solid lightgrey;
+border-radius: 40px;
+outline: none;
+width: 98%;
+height: 30px;
+text-indent: 7px;
+margin-bottom: 16px;
+}
+
+/* Styling the submit button */
+.submit_button input[type="submit"] {
+width: 100%;
+padding: 10px;
+background-color: #ffd049;
+color: black;
+border: 1px solid #dbdbdb;
+border-radius: 40px;
+outline: none;
+font-size: 14px;
+box-sizing: border-box; /* 추가: 박스 모델에 패딩과 테두리 포함 */
+margin-bottom: 30px;
+}
+
+/* Hover effect for the submit button */
+.submit_button input[type="submit"]:hover {
+background-color: #ffd049;
+border: 1px solid white;
+}
+
+.extra_buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.extra_buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  position: relative;
+}
+
+/* 버튼 사이에만 border-left 넣기 */
+.extra_buttons button + button {
+  border-left: 1px solid #ccc;
+  margin-left: 15px; /* 구분선과의 간격 */
+  padding-left: 14px;
+  margin-left: 12px;
+}

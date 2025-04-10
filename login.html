@@ -4,87 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" />
-    <style>
-      img{
-            width: 210px;
-            height: 100px;
-            object-fit: contain;
-        }
-      
-      button {border:none; background-color: #f5f5f5;}
-      /* Styling the container */
-      .container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 400px;
-        padding: 20px;
-        background-color: #f5f5f5;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        text-align: center;
-        font-family: "Roboto", sans-serif; /* Apply Roboto font */
-      }
-
-      /* Styling the login form */
-      #login-form {
-        display: inline-block;
-        text-align: left;
-      }
-
-      /* Styling the heading */
-      h2 {
-        font-size: 35px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-      }
-
-      /* Styling the input fields and submit button */
-      .login_input input {
-        border: 2px solid lightgrey;
-        border-radius: 40px;
-        outline: none;
-        width: 98%;
-        height: 30px;
-        text-indent: 7px;
-        margin-bottom: 8px;
-      }
-
-      /* Styling the submit button */
-      .submit_button input[type="submit"] {
-        width: 100%;
-        padding: 10px;
-        background-color: #ffd049;
-        color: black;
-        border: 1px solid #dbdbdb;
-        border-radius: 40px;
-        outline: none;
-        font-size: 14px;
-        box-sizing: border-box; /* 추가: 박스 모델에 패딩과 테두리 포함 */
-      }
-
-      /* Hover effect for the submit button */
-      .submit_button input[type="submit"]:hover {
-        background-color: #ffd049;
-        border: 1px solid white;
-      }
-    </style>
+    <link rel="stylesheet" href="./loginstyle.css">
     <title>로그인</title>
   </head>
 
   <body>
     <div class="container">
-      <button type="button" onclick="alert('클릭!')">
-        <img src="./logo.png"/>
-      </button>
+      <a href="main.html" class="logo-button">
+        <img src="./logo.png" alt="Openrun Logo" />
+      </a>
+      <form action="/login" method="post">
         <div class="login_input">
-          <input type="text" name="id" placeholder="ID" />
-          <input type="password" name="passwd" placeholder="PASSWORD" />
+          <input type="text" name="id" placeholder="아이디" />
+          <input type="password" name="passwd" placeholder="비밀번호" />
         </div>
         <div class="submit_button">
           <input type="submit" value="로그인" />
+        </div>
+        <div class="extra_buttons">
+          <button type="button" onclick="alert('아이디 찾기')">아이디 찾기</button>
+          <button type="button" onclick="alert('비밀번호 찾기')">비밀번호 찾기</button>
+          <button type="button" onclick="location.href='signup.html'">회원가입</button>
         </div>
       </form>
     </div>
