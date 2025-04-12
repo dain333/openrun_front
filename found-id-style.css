@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    margin-top: 90px;
+    padding: 30px;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.id-display {
+    font-size: 24px;
+    font-weight: bold;
+    color: black; /* 빨간 글씨로 아이디 표시 */
+    margin: 20px 0;
+}
+
+.button-container {
+    margin-top: 60px;
+}
+
+.btn { 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffd049;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover { 
+    background-color: #ffd049; /*마우스 오버 시 바뀌는 디자인*/
+}
